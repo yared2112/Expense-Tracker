@@ -5,7 +5,7 @@ import { GlobalContext } from '../context/GlobalState';
 function moneyFormatter(num) {
   let p = num.toFixed(2).split('.');
   return (
-    '$ ' + (p[0].split('')[0]=== '-' ? '-' : '') +
+    'ETB ' + (p[0].split('')[0]=== '-' ? '-' : '') +
     p[0]
       .split('')
       .reverse()
@@ -27,7 +27,7 @@ export const Balance = () => {
   return (
     <>
       <h4>Your Balance</h4>
-    <h1>{moneyFormatter(total)}</h1>
+    <h1>{(total)}</h1>
     </>
   )
 }
